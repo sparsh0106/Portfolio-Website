@@ -22,7 +22,7 @@ with col2:
 st.write("\n")
 st.subheader("**About Me**")
 st.write("""
-        Hi, I'm Sparsh, a sophomore student studying Robotics & AI Engineering at [Your College Name]. I’m passionate about solving complex problems through technology, particularly in robotics, AI, and automation.
+        Hi, I'm Sparsh, a sophomore student studying Robotics & AI Engineering at Thapar Institute of Engineering and Technology. I’m passionate about solving complex problems through technology, particularly in robotics, AI, and automation.
 
         I have a strong foundation in Python and enjoy working on hands-on projects, from machine learning algorithms to building robotic systems. Currently, I’m exploring autonomous systems and AI-human collaboration.
 
