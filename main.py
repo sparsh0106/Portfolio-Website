@@ -1,5 +1,4 @@
 import streamlit as st
-from sympy.codegen.cnodes import alignof
 
 css_file = "S:\Programming Stuff\Code _n_ Stuff\All Projects\All Projects\My Custom Portfolio Website\styles\main.css"
 
