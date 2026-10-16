@@ -1,55 +1,59 @@
-# Portfolio Website 🌐  
+# 🌐 Personal Portfolio Website (Streamlit)
 
-Welcome to the source code repository for my **Portfolio Website**! This project is a showcase of my skills, achievements, and interests, providing visitors with insights into my professional and personal journey.  
+Welcome to the source code repository for my multi-page **Personal Portfolio Website** built with **Streamlit**! This interactive web application showcases my background, AI/ML & engineering projects, astrophotography/extracurricular activities, and an integrated webhook contact form.
 
-## 🔧 Technologies Used  
+---
 
-- **HTML5**: For creating the structure and content of the website.  
-- **CSS3**: For styling and making the website visually appealing.  
-- **JavaScript**: For adding interactivity and functionality.  
-- **Bootstrap (optional)**: For responsive design and layout.  
-- **Font Awesome**: For icons.  
+## 📂 Project Structure
 
-## ✨ Features  
-
-- **Responsive Design**: Works seamlessly across devices of all sizes.  
-- **Interactive Sections**: Dynamic elements like hover effects and smooth scrolling.  
-- **Projects Showcase**: A dedicated section highlighting my key projects with links to live demos or GitHub repositories.  
-- **Contact Form**: Visitors can reach out to me directly via the integrated contact form.  
-- **Custom Styling**: Unique fonts and colors to reflect my personality and style.  
-
-## 📂 Project Structure  
-
-```plaintext
-├── index.html       # Main HTML file  
-├── style.css        # Custom CSS styles  
-├── script.js        # JavaScript functionality  
-├── assets/          # Images and other assets  
-│   ├── images/  
-│   ├── icons/  
-├── README.md        # Project documentation  
+```text
+Portfolio-Website/
+├── assets/                  # Project screenshots, profile photo, and astrophotography images
+├── forms/
+│   └── contact.py           # Interactive contact form integrated with webhook notifications
+├── styles/
+│   └── main.css             # Custom CSS styling injected into Streamlit
+├── views/
+│   ├── about_me.py          # Hero section, biography, education, and technical skills
+│   ├── projects.py          # Showcase of featured AI/ML and software projects with links
+│   └── extracurricular.py   # Astrophotography gallery and extracurricular highlights
+├── main.py                  # Multi-page Streamlit navigation entrypoint
+├── requirements.txt         # Python dependencies
+├── LICENSE                  # MIT License
+└── README.md                # Project documentation
 ```
 
-## 🚀 How to Use
+---
 
-1. Clone this repository:
+## ✨ Features
 
-```bash
-git clone https://github.com/sparsh0106/Portfolio-Website.git
-```
+- **Multi-Page Streamlit Navigation**: Clean sidebar routing across *About Me*, *Projects*, and *Extracurricular* views (`main.py`).
+- **Project Showcase**: Highlights flagship projects including *SparshGPT*, *TAAS Discord Bot*, *Ecommerce Regression Analysis*, and *Ocean Escapes* with screenshots and direct links.
+- **Astrophotography Gallery**: Displays captured celestial images (Orion Constellation, deep-sky captures).
+- **Integrated Contact Form**: Validates user inputs and dispatches messages via `WEBHOOK_URL` configured in Streamlit secrets (`forms/contact.py`).
 
-2. Open the project folder:
+---
 
-```bash
-cd Portfolio-Website
-```
+## 🚀 Getting Started
 
-3. Open the `index.html` file in your browser to view the portfolio.
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/sparsh0106/Portfolio-Website.git
+   cd Portfolio-Website
+   ```
 
-## 📬 Feedback
+2. **Install dependencies**:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-Have suggestions or found a bug? Feel free to open an issue or contact me directly.
+3. **Run the Streamlit app**:
+   ```bash
+   streamlit run main.py
+   ```
 
-## 📝 License
+---
 
-This project is open-source and available under the MIT License.
+## 📄 License
+
+This project is licensed under the [MIT License](LICENSE).
